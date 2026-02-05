@@ -88,11 +88,11 @@
 
 ## 5. Icon System
 
-- [ ] Select outline icon library
-- [ ] Ensure consistent stroke width
-- [ ] Implement rounded terminals
-- [ ] Verify minimal geometry approach
-- [ ] Enforce no mixed icon styles
+- [x] Select outline icon library
+- [x] Ensure consistent stroke width
+- [x] Implement rounded terminals
+- [x] Verify minimal geometry approach
+- [x] Enforce no mixed icon styles
 
 ---
 
@@ -221,35 +221,35 @@
 ## 12. Interaction & Motion System
 
 ### Interaction Feedback
-- [ ] Tap → scale 0.97
-- [ ] Success → glow pulse
-- [ ] Error → gentle shake
-- [ ] Save → toast slide
-- [ ] All animations < 200ms
+- [x] Tap → scale 0.97
+- [x] Success → glow pulse
+- [x] Error → gentle shake
+- [x] Save → toast slide
+- [x] All animations < 200ms
 
 ### Allowed Motion
-- [ ] Fade transitions
-- [ ] Slide transitions
-- [ ] Expand animations
-- [ ] Glow pulse effects
+- [x] Fade transitions
+- [x] Slide transitions
+- [x] Expand animations
+- [x] Glow pulse effects
 
 ### Forbidden Motion
-- [ ] No bounce
-- [ ] No spring physics
-- [ ] No overshoot
-- [ ] No cartoon motion
-- [ ] No playful easing
+- [x] No bounce
+- [x] No spring physics
+- [x] No overshoot
+- [x] No cartoon motion
+- [x] No playful easing
 
 ---
 
 ## 13. Error UX
 
-- [ ] Floating message cards for errors
-- [ ] Error title
-- [ ] Clear explanation
-- [ ] Fix suggestion
-- [ ] No generic errors
-- [ ] Teach the user approach
+- [x] Floating message cards for errors
+- [x] Error title
+- [x] Clear explanation
+- [x] Fix suggestion
+- [x] No generic errors
+- [x] Teach the user approach
 
 ---
 
