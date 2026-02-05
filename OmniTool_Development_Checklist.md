@@ -283,23 +283,23 @@
 ## 16. Feature Suite: Text & Developer Tools
 
 - [x] JSON formatter/validator
-- [ ] XML formatter
-- [ ] Markdown preview
-- [ ] Regex tester
+- [x] XML formatter
+- [x] Markdown preview
+- [x] Regex tester
 - [x] Base64 encode/decode
 - [x] URL encode/decode
 - [x] Hash generator (MD5, SHA-1, SHA-256, etc.)
-- [ ] Text diff compare
+- [x] Text diff compare
 - [x] Case converter (upper, lower, title, sentence)
 - [x] Duplicate remover
 - [x] Whitespace cleaner
 - [x] Word/character counter
 - [x] Lorem ipsum generator
-- [ ] Random string generator
-- [ ] Clipboard history
-- [ ] Code scratchpad
-- [ ] HTML preview
-- [ ] CSV viewer
+- [x] Random string generator
+- [x] Clipboard history
+- [x] Code scratchpad
+- [x] HTML preview
+- [x] CSV viewer
 
 ---
 

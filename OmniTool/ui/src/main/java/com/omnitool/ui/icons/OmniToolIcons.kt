@@ -115,6 +115,10 @@ object OmniToolIcons {
     val ChevronRight: ImageVector = Icons.Outlined.ChevronRight
     val ExpandMore: ImageVector = Icons.Outlined.ExpandMore
     val ExpandLess: ImageVector = Icons.Outlined.ExpandLess
+    val Pin: ImageVector = Icons.Outlined.PushPin
+    val PinOutline: ImageVector = Icons.Outlined.PushPin
+    val Delete: ImageVector = Icons.Outlined.Delete
+    val Html: ImageVector = Icons.Outlined.Language
     
     // Status Icons
     val Success: ImageVector = Icons.Outlined.CheckCircle

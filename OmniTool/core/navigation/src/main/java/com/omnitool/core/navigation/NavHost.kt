@@ -157,6 +157,51 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(TextToolRoute.RegexTester.route) {
+                com.omnitool.features.text.regex.RegexTesterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.RandomString.route) {
+                com.omnitool.features.text.randomstring.RandomStringScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.TextDiff.route) {
+                com.omnitool.features.text.textdiff.TextDiffScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.XmlFormatter.route) {
+                com.omnitool.features.text.xml.XmlFormatterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.MarkdownPreview.route) {
+                com.omnitool.features.text.markdown.MarkdownPreviewScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.Scratchpad.route) {
+                com.omnitool.features.text.scratchpad.ScratchpadScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.HtmlPreview.route) {
+                com.omnitool.features.text.html.HtmlPreviewScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.CsvViewer.route) {
+                com.omnitool.features.text.csv.CsvViewerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.ClipboardHistory.route) {
+                com.omnitool.features.text.clipboard.ClipboardHistoryScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
