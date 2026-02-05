@@ -33,6 +33,10 @@ import com.omnitool.ui.screens.FavoritesScreen
 import com.omnitool.ui.screens.VaultScreen
 import com.omnitool.ui.screens.SettingsScreen
 
+// Type aliases for cleaner route usage
+typealias TextToolRoute = Route
+typealias ConverterToolRoute = Route
+
 /**
  * Bottom navigation items
  */
@@ -199,6 +203,48 @@ fun OmniToolNavHost(
             }
             composable(TextToolRoute.ClipboardHistory.route) {
                 com.omnitool.features.text.clipboard.ClipboardHistoryScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            
+            // Converter Tools
+            composable(ConverterToolRoute.UnitConverter.route) {
+                com.omnitool.features.converter.unit.UnitConverterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(ConverterToolRoute.TimezoneConverter.route) {
+                com.omnitool.features.converter.timezone.TimezoneConverterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(ConverterToolRoute.DateCalculator.route) {
+                com.omnitool.features.converter.date.DateCalculatorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(ConverterToolRoute.AgeCalculator.route) {
+                com.omnitool.features.converter.age.AgeCalculatorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(ConverterToolRoute.BaseConverter.route) {
+                com.omnitool.features.converter.base.BaseConverterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(ConverterToolRoute.ColorConverter.route) {
+                com.omnitool.features.converter.color.ColorConverterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(ConverterToolRoute.StorageConverter.route) {
+                com.omnitool.features.converter.storage.StorageConverterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(ConverterToolRoute.TemperatureConverter.route) {
+                com.omnitool.features.converter.temperature.TemperatureConverterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }

@@ -324,16 +324,18 @@
 
 ## 18. Feature Suite: Converter Engine
 
-- [ ] Unit converter (length, weight, volume, area, etc.)
+- [x] Unit converter (length, weight, volume, area, etc.)
 - [ ] Currency converter (with cached rates)
-- [ ] Time zone converter
-- [ ] Date calculator
-- [ ] Age calculator
-- [ ] Base converter (binary, hex, octal, decimal)
-- [ ] Storage converter (KB, MB, GB, TB)
+- [x] Time zone converter
+- [x] Date calculator
+- [x] Age calculator
+- [x] Base converter (binary, hex, octal, decimal)
+- [x] Storage converter (KB, MB, GB, TB)
 - [ ] Speed converter
 - [ ] Fuel calculator
 - [ ] Percentage calculator
+- [x] Color format converter
+- [x] Temperature converter
 
 ---
 
