@@ -115,6 +115,48 @@ fun OmniToolNavHost(
             }
             
             // Tool screens will be added here as they are implemented
+            
+            // Text Tools
+            composable(TextToolRoute.JsonFormatter.route) {
+                com.omnitool.features.text.json.JsonFormatterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.Base64.route) {
+                com.omnitool.features.text.base64.Base64Screen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.HashGenerator.route) {
+                com.omnitool.features.text.hash.HashGeneratorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.CaseConverter.route) {
+                com.omnitool.features.text.caseconverter.CaseConverterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.WordCounter.route) {
+                com.omnitool.features.text.wordcount.WordCountScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.LoremIpsum.route) {
+                com.omnitool.features.text.lorem.LoremIpsumScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.DuplicateRemover.route) {
+                com.omnitool.features.text.duplicateremover.DuplicateRemoverScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(TextToolRoute.WhitespaceCleaner.route) {
+                com.omnitool.features.text.whitespace.WhitespaceCleanerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
