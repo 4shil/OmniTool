@@ -371,9 +371,9 @@
 - [x] Room database setup
 - [x] Favorites storage
 - [x] Recent tools tracking
-- [ ] User preferences storage
-- [ ] Encrypted vault storage
-- [ ] Clipboard history persistence
+- [x] User preferences storage
+- [x] Encrypted vault storage
+- [x] Clipboard history persistence
 - [x] No cloud sync (local only)
 
 ---
