@@ -406,6 +406,21 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.Speedometer.route) {
+                com.omnitool.features.utilities.speedometer.SpeedometerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Level.route) {
+                com.omnitool.features.utilities.level.LevelScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Percentage.route) {
+                com.omnitool.features.converter.percentage.PercentageScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
