@@ -309,6 +309,18 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.ImageCompress.route) {
+                com.omnitool.features.file.image.ImageCompressScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            
+            // Utility Tools
+            composable(Route.QuickNotes.route) {
+                com.omnitool.features.utilities.notes.QuickNotesScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }

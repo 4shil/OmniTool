@@ -305,7 +305,7 @@
 
 ## 17. Feature Suite: File & Media Toolkit
 
-- [ ] Image compression
+- [x] Image compression
 - [ ] Image resize/crop
 - [ ] Image format conversion
 - [ ] Merge images → PDF
@@ -364,7 +364,7 @@
 - [ ] Sound meter
 - [x] Calculator
 - [x] Tip calculator
-- [ ] Quick notes
+- [x] Quick notes
 
 ---
 
