@@ -317,7 +317,7 @@
 - [x] QR code generator
 - [ ] Audio cutter
 - [ ] Video → GIF converter
-- [ ] EXIF viewer
+- [x] EXIF viewer
 - [ ] Batch rename tool
 
 ---

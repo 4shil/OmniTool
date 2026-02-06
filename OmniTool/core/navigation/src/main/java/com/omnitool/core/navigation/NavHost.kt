@@ -321,6 +321,11 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.ExifViewer.route) {
+                com.omnitool.features.file.exif.ExifViewerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
