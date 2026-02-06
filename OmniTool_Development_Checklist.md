@@ -357,12 +357,12 @@
 - [x] Stopwatch
 - [x] Timer
 - [x] Countdown timer
-- [ ] Random picker
-- [ ] Dice roller
-- [ ] Color picker
+- [x] Random picker
+- [x] Dice roller
+- [x] Color picker
 - [ ] Flashlight
 - [ ] Sound meter
-- [ ] Calculator
+- [x] Calculator
 - [ ] Tip calculator
 - [ ] Quick notes
 

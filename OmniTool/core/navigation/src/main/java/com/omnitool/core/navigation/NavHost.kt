@@ -282,6 +282,21 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.Calculator.route) {
+                com.omnitool.features.utilities.calculator.CalculatorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.DiceRoller.route) {
+                com.omnitool.features.utilities.dice.DiceRollerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.ColorPicker.route) {
+                com.omnitool.features.utilities.colorpicker.ColorPickerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
