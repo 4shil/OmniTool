@@ -248,6 +248,18 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            
+            // Security Tools
+            composable(Route.PasswordGenerator.route) {
+                com.omnitool.features.security.password.PasswordGeneratorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.PasswordStrength.route) {
+                com.omnitool.features.security.strength.PasswordStrengthScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
