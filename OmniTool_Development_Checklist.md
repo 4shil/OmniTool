@@ -312,7 +312,7 @@
 - [ ] PDF split
 - [ ] PDF merge
 - [ ] Extract PDF images
-- [ ] PDF viewer
+- [x] PDF viewer
 - [ ] QR code scanner
 - [x] QR code generator
 - [ ] Audio cutter
@@ -360,8 +360,8 @@
 - [x] Random picker
 - [x] Dice roller
 - [x] Color picker
-- [ ] Flashlight
-- [ ] Sound meter
+- [x] Flashlight
+- [x] Sound meter
 - [x] Calculator
 - [x] Tip calculator
 - [x] Quick notes

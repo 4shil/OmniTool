@@ -326,6 +326,21 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.PdfViewer.route) {
+                com.omnitool.features.file.pdf.PdfViewerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Flashlight.route) {
+                com.omnitool.features.utilities.flashlight.FlashlightScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.SoundMeter.route) {
+                com.omnitool.features.utilities.soundmeter.SoundMeterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
