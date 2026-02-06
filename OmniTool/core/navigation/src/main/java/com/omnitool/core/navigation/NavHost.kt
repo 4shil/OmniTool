@@ -260,6 +260,16 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.RandomNumber.route) {
+                com.omnitool.features.security.random.RandomNumberScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.OtpGenerator.route) {
+                com.omnitool.features.security.otp.OtpGeneratorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
