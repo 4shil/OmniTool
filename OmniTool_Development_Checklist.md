@@ -314,7 +314,7 @@
 - [ ] Extract PDF images
 - [ ] PDF viewer
 - [ ] QR code scanner
-- [ ] QR code generator
+- [x] QR code generator
 - [ ] Audio cutter
 - [ ] Video → GIF converter
 - [ ] EXIF viewer
@@ -363,7 +363,7 @@
 - [ ] Flashlight
 - [ ] Sound meter
 - [x] Calculator
-- [ ] Tip calculator
+- [x] Tip calculator
 - [ ] Quick notes
 
 ---

@@ -297,6 +297,18 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.TipCalculator.route) {
+                com.omnitool.features.utilities.tip.TipCalculatorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            
+            // File & Media Tools
+            composable(Route.QrGenerator.route) {
+                com.omnitool.features.file.qrcode.QrGeneratorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
