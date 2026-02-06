@@ -270,6 +270,18 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            
+            // Utility Tools
+            composable(Route.Stopwatch.route) {
+                com.omnitool.features.utilities.stopwatch.StopwatchScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Timer.route) {
+                com.omnitool.features.utilities.timer.TimerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
