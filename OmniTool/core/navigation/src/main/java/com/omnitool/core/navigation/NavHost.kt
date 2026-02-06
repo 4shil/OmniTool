@@ -351,6 +351,31 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.ImageResize.route) {
+                com.omnitool.features.file.resize.ImageResizeScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.WorldClock.route) {
+                com.omnitool.features.utilities.worldclock.WorldClockScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.TextCase.route) {
+                com.omnitool.features.converter.text.TextCaseScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Compass.route) {
+                com.omnitool.features.utilities.compass.CompassScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Base64.route) {
+                com.omnitool.features.converter.base64.Base64Screen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }

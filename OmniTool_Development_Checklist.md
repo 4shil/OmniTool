@@ -127,6 +127,7 @@
 - [x] Placeholder: "Find a tool…"
 - [ ] Instant keyboard focus
 - [ ] Live suggestion list
+- [x] Compass
 - [ ] Command palette behavior
 
 ### Recent Tools Strip
@@ -306,7 +307,7 @@
 ## 17. Feature Suite: File & Media Toolkit
 
 - [x] Image compression
-- [ ] Image resize/crop
+- [x] Image resize/crop
 - [ ] Image format conversion
 - [ ] Merge images → PDF
 - [ ] PDF split
@@ -365,6 +366,7 @@
 - [x] Calculator
 - [x] Tip calculator
 - [x] Quick notes
+- [x] World clock
 
 ---
 
@@ -476,7 +478,7 @@
 ## 26. Cognitive Load & UX Polish
 
 - [ ] Hide complexity (tools surface through search/recents/favorites/categories)
-- [ ] No blocking popups
+- [x] World clock
 - [ ] Keyboard-first workflow support
 - [ ] No dense layouts
 - [ ] No random colors
