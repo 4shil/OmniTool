@@ -341,22 +341,22 @@
 
 ## 19. Feature Suite: Privacy & Security
 
-- [ ] Password generator
-- [ ] Password strength checker
+- [x] Password generator
+- [x] Password strength checker
 - [ ] Encrypted notes vault
 - [ ] File encryption
 - [ ] File decryption
-- [ ] OTP generator (TOTP/HOTP)
-- [ ] Random number generator
+- [x] OTP generator (TOTP/HOTP)
+- [x] Random number generator
 - [ ] Secure delete simulation
 
 ---
 
 ## 20. Feature Suite: Everyday Utilities
 
-- [ ] Stopwatch
-- [ ] Timer
-- [ ] Countdown timer
+- [x] Stopwatch
+- [x] Timer
+- [x] Countdown timer
 - [ ] Random picker
 - [ ] Dice roller
 - [ ] Color picker
