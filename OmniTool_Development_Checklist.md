@@ -313,12 +313,12 @@
 - [ ] PDF merge
 - [ ] Extract PDF images
 - [x] PDF viewer
-- [ ] QR code scanner
+- [x] QR code scanner
 - [x] QR code generator
 - [ ] Audio cutter
 - [ ] Video → GIF converter
 - [x] EXIF viewer
-- [ ] Batch rename tool
+- [x] Batch rename tool
 
 ---
 

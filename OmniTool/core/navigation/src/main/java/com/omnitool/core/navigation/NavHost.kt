@@ -341,6 +341,16 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.QrScanner.route) {
+                com.omnitool.features.file.qrscanner.QrScannerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.BatchRename.route) {
+                com.omnitool.features.file.rename.BatchRenameScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
