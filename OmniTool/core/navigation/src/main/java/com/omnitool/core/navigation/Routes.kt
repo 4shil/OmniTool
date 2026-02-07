@@ -15,7 +15,7 @@ sealed class Route(val route: String) {
     data object XmlFormatter : Route("tool/xml_formatter")
     data object MarkdownPreview : Route("tool/markdown_preview")
     data object RegexTester : Route("tool/regex_tester")
-    data object Base64Tool : Route("tool/base64")
+    data object Base64 : Route("tool/base64")
     data object UrlEncoder : Route("tool/url_encoder")
     data object HashGenerator : Route("tool/hash_generator")
     data object TextDiff : Route("tool/text_diff")
@@ -26,12 +26,12 @@ sealed class Route(val route: String) {
     data object LoremIpsum : Route("tool/lorem_ipsum")
     data object RandomString : Route("tool/random_string")
     data object ClipboardHistory : Route("tool/clipboard_history")
-    data object CodeScratchpad : Route("tool/code_scratchpad")
+    data object Scratchpad : Route("tool/code_scratchpad")
     data object HtmlPreview : Route("tool/html_preview")
     data object CsvViewer : Route("tool/csv_viewer")
     
     // File tools
-    data object ImageCompressor : Route("tool/image_compressor")
+    data object ImageCompress : Route("tool/image_compressor")
     data object ImageResize : Route("tool/image_resize")
     data object ImageConverter : Route("tool/image_converter")
     data object ImageToPdf : Route("tool/image_to_pdf")
@@ -58,7 +58,7 @@ sealed class Route(val route: String) {
     data object TemperatureConverter : Route("tool/temperature_converter")
     data object SpeedConverter : Route("tool/speed_converter")
     data object FuelCalculator : Route("tool/fuel_calculator")
-    data object PercentageCalculator : Route("tool/percentage_calculator")
+    data object Percentage : Route("tool/percentage_calculator")
     
     // Security tools
     data object PasswordGenerator : Route("tool/password_generator")
@@ -81,4 +81,15 @@ sealed class Route(val route: String) {
     data object Calculator : Route("tool/calculator")
     data object TipCalculator : Route("tool/tip_calculator")
     data object QuickNotes : Route("tool/quick_notes")
+    
+    // Additional tools from NavHost
+    data object WorldClock : Route("tool/world_clock")
+    data object TextCase : Route("tool/text_case")
+    data object Compass : Route("tool/compass")
+    data object LoanCalculator : Route("tool/loan_calculator")
+    data object NumberBase : Route("tool/number_base")
+    data object Temperature : Route("tool/temperature")
+    data object BmiCalculator : Route("tool/bmi_calculator")
+    data object Speedometer : Route("tool/speedometer")
+    data object Level : Route("tool/level")
 }

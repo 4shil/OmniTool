@@ -349,6 +349,71 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            composable(Route.WorldClock.route) {
+                com.omnitool.features.utilities.worldclock.WorldClockScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.TextCase.route) {
+                com.omnitool.features.converter.text.TextCaseScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Compass.route) {
+                com.omnitool.features.utilities.compass.CompassScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Base64.route) {
+                com.omnitool.features.converter.base64.Base64Screen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.UrlEncoder.route) {
+                com.omnitool.features.converter.url.UrlEncoderScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.HashGenerator.route) {
+                com.omnitool.features.converter.hash.HashGeneratorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.LoanCalculator.route) {
+                com.omnitool.features.converter.loan.LoanCalculatorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.NumberBase.route) {
+                com.omnitool.features.converter.numbase.NumberBaseScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Temperature.route) {
+                com.omnitool.features.converter.temperature.TemperatureScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.BmiCalculator.route) {
+                com.omnitool.features.converter.bmi.BmiCalculatorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Speedometer.route) {
+                com.omnitool.features.utilities.speedometer.SpeedometerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Level.route) {
+                com.omnitool.features.utilities.level.LevelScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.Percentage.route) {
+                com.omnitool.features.converter.percentage.PercentageScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
