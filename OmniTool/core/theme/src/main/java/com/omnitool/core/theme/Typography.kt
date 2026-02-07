@@ -29,7 +29,9 @@ data class OmniToolTypography(
     val header: TextStyle,     // 20sp
     val body: TextStyle,       // 16sp
     val label: TextStyle,      // 14sp
-    val caption: TextStyle     // 12sp
+    val caption: TextStyle,    // 12sp
+    val headingLarge: TextStyle,
+    val headingMedium: TextStyle
 )
 
 val DefaultTypography = OmniToolTypography(
@@ -68,6 +70,18 @@ val DefaultTypography = OmniToolTypography(
         fontWeight = FontWeight.Normal,
         fontSize = 12.sp,
         lineHeight = 16.sp
+    ),
+    headingLarge = TextStyle(
+        fontFamily = OmniToolFontFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 28.sp,
+        lineHeight = 34.sp
+    ),
+    headingMedium = TextStyle(
+        fontFamily = OmniToolFontFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 22.sp,
+        lineHeight = 28.sp
     )
 )
 

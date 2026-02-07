@@ -32,7 +32,18 @@ data class OmniToolColors(
     val divider: Color,
     val overlay: Color,
     val shadowColor: Color,
-    val highlightOverlay: Color
+    val highlightOverlay: Color,
+    
+    // Additional accent colors
+    val accentOrange: Color,
+    val lavender: Color,
+    val coral: Color,
+    val accentYellow: Color,
+    
+    // Tool Specific
+    val screenLight: Color,
+    val flashlightOn: Color,
+    val flashlightOff: Color
 )
 
 /**
@@ -61,7 +72,18 @@ val DarkColors = OmniToolColors(
     divider = Color(0xFF2A2D3A),
     overlay = Color(0x80000000),
     shadowColor = Color(0x59000000),  // rgba(0,0,0,0.35)
-    highlightOverlay = Color(0x0DFFFFFF)  // rgba(255,255,255,0.05)
+    highlightOverlay = Color(0x0DFFFFFF), // rgba(255,255,255,0.05)
+    
+    // Additional accent colors
+    accentOrange = Color(0xFFFF5722),
+    lavender = Color(0xFF9575CD),
+    coral = Color(0xFFFF8A65),
+    accentYellow = Color(0xFFFFEB3B),
+    
+    // Tool Specific
+    screenLight = Color(0xFFFFFFFF),
+    flashlightOn = Color(0xFFFFD600),
+    flashlightOff = Color(0xFF212121)
 )
 
 /**
