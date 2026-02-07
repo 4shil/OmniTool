@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.omnitool.core.theme.OmniToolTheme
-import com.omnitool.core.navigation.OmniToolNavHost
+import com.omnitool.app.navigation.OmniToolNavHost
 import dagger.hilt.android.AndroidEntryPoint
 
 /**

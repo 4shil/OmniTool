@@ -1,4 +1,4 @@
-package com.omnitool.core.navigation
+package com.omnitool.app.navigation
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
@@ -32,14 +32,9 @@ import com.omnitool.ui.screens.HomeScreen
 import com.omnitool.ui.screens.FavoritesScreen
 import com.omnitool.ui.screens.VaultScreen
 import com.omnitool.ui.screens.SettingsScreen
+import com.omnitool.core.navigation.Route
 
-// Type aliases for cleaner route usage
-typealias TextToolRoute = Route
-typealias ConverterToolRoute = Route
-
-/**
- * Bottom navigation items
- */
+// Bottom navigation items
 data class BottomNavItem(
     val route: String,
     val label: String,
@@ -118,132 +113,130 @@ fun OmniToolNavHost(
                 SettingsScreen()
             }
             
-            // Tool screens will be added here as they are implemented
-            
             // Text Tools
-            composable(TextToolRoute.JsonFormatter.route) {
+            composable(Route.JsonFormatter.route) {
                 com.omnitool.features.text.json.JsonFormatterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.Base64.route) {
+            composable(Route.Base64Tool.route) {
                 com.omnitool.features.text.base64.Base64Screen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.HashGenerator.route) {
+            composable(Route.HashGenerator.route) {
                 com.omnitool.features.text.hash.HashGeneratorScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.CaseConverter.route) {
+            composable(Route.CaseConverter.route) {
                 com.omnitool.features.text.caseconverter.CaseConverterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.WordCounter.route) {
+            composable(Route.WordCounter.route) {
                 com.omnitool.features.text.wordcount.WordCountScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.LoremIpsum.route) {
+            composable(Route.LoremIpsum.route) {
                 com.omnitool.features.text.lorem.LoremIpsumScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.DuplicateRemover.route) {
+            composable(Route.DuplicateRemover.route) {
                 com.omnitool.features.text.duplicateremover.DuplicateRemoverScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.WhitespaceCleaner.route) {
+            composable(Route.WhitespaceCleaner.route) {
                 com.omnitool.features.text.whitespace.WhitespaceCleanerScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.RegexTester.route) {
+            composable(Route.RegexTester.route) {
                 com.omnitool.features.text.regex.RegexTesterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.RandomString.route) {
+            composable(Route.RandomString.route) {
                 com.omnitool.features.text.randomstring.RandomStringScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.TextDiff.route) {
+            composable(Route.TextDiff.route) {
                 com.omnitool.features.text.textdiff.TextDiffScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.XmlFormatter.route) {
+            composable(Route.XmlFormatter.route) {
                 com.omnitool.features.text.xml.XmlFormatterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.MarkdownPreview.route) {
+            composable(Route.MarkdownPreview.route) {
                 com.omnitool.features.text.markdown.MarkdownPreviewScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.Scratchpad.route) {
+            composable(Route.CodeScratchpad.route) {
                 com.omnitool.features.text.scratchpad.ScratchpadScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.HtmlPreview.route) {
+            composable(Route.HtmlPreview.route) {
                 com.omnitool.features.text.html.HtmlPreviewScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.CsvViewer.route) {
+            composable(Route.CsvViewer.route) {
                 com.omnitool.features.text.csv.CsvViewerScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(TextToolRoute.ClipboardHistory.route) {
+            composable(Route.ClipboardHistory.route) {
                 com.omnitool.features.text.clipboard.ClipboardHistoryScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
             
             // Converter Tools
-            composable(ConverterToolRoute.UnitConverter.route) {
+            composable(Route.UnitConverter.route) {
                 com.omnitool.features.converter.unit.UnitConverterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(ConverterToolRoute.TimezoneConverter.route) {
+            composable(Route.TimezoneConverter.route) {
                 com.omnitool.features.converter.timezone.TimezoneConverterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(ConverterToolRoute.DateCalculator.route) {
+            composable(Route.DateCalculator.route) {
                 com.omnitool.features.converter.date.DateCalculatorScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(ConverterToolRoute.AgeCalculator.route) {
+            composable(Route.AgeCalculator.route) {
                 com.omnitool.features.converter.age.AgeCalculatorScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(ConverterToolRoute.BaseConverter.route) {
+            composable(Route.BaseConverter.route) {
                 com.omnitool.features.converter.base.BaseConverterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(ConverterToolRoute.ColorConverter.route) {
+            composable(Route.ColorConverter.route) {
                 com.omnitool.features.converter.color.ColorConverterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(ConverterToolRoute.StorageConverter.route) {
+            composable(Route.StorageConverter.route) {
                 com.omnitool.features.converter.storage.StorageConverterScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(ConverterToolRoute.TemperatureConverter.route) {
+            composable(Route.TemperatureConverter.route) {
                 com.omnitool.features.converter.temperature.TemperatureConverterScreen(
                     onBack = { navController.popBackStack() }
                 )
@@ -309,7 +302,7 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(Route.ImageCompress.route) {
+            composable(Route.ImageCompressor.route) {
                 com.omnitool.features.file.image.ImageCompressScreen(
                     onBack = { navController.popBackStack() }
                 )
@@ -353,71 +346,6 @@ fun OmniToolNavHost(
             }
             composable(Route.ImageResize.route) {
                 com.omnitool.features.file.resize.ImageResizeScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.WorldClock.route) {
-                com.omnitool.features.utilities.worldclock.WorldClockScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.TextCase.route) {
-                com.omnitool.features.converter.text.TextCaseScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.Compass.route) {
-                com.omnitool.features.utilities.compass.CompassScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.Base64.route) {
-                com.omnitool.features.converter.base64.Base64Screen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.UrlEncoder.route) {
-                com.omnitool.features.converter.url.UrlEncoderScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.HashGenerator.route) {
-                com.omnitool.features.converter.hash.HashGeneratorScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.LoanCalculator.route) {
-                com.omnitool.features.converter.loan.LoanCalculatorScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.NumberBase.route) {
-                com.omnitool.features.converter.numbase.NumberBaseScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.Temperature.route) {
-                com.omnitool.features.converter.temperature.TemperatureScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.BmiCalculator.route) {
-                com.omnitool.features.converter.bmi.BmiCalculatorScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.Speedometer.route) {
-                com.omnitool.features.utilities.speedometer.SpeedometerScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.Level.route) {
-                com.omnitool.features.utilities.level.LevelScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
-            composable(Route.Percentage.route) {
-                com.omnitool.features.converter.percentage.PercentageScreen(
                     onBack = { navController.popBackStack() }
                 )
             }
