@@ -20,26 +20,24 @@ class FavoritesRepository @Inject constructor(
     
     suspend fun isFavorite(toolId: String): Boolean = favoriteDao.isFavorite(toolId)
     
-    suspend fun addFavorite(toolId: String, toolName: String, toolIcon: String, accentColor: String) {
+    suspend fun addFavorite(toolId: String, order: Int) {
         val favorite = FavoriteEntity(
             toolId = toolId,
-            toolName = toolName,
-            toolIcon = toolIcon,
-            accentColor = accentColor,
+            order = order,
             addedAt = System.currentTimeMillis()
         )
         favoriteDao.insertFavorite(favorite)
     }
     
     suspend fun removeFavorite(toolId: String) {
-        favoriteDao.deleteFavorite(toolId)
+        favoriteDao.deleteFavoriteById(toolId)
     }
     
-    suspend fun toggleFavorite(toolId: String, toolName: String, toolIcon: String, accentColor: String) {
+    suspend fun toggleFavorite(toolId: String, order: Int) {
         if (isFavorite(toolId)) {
             removeFavorite(toolId)
         } else {
-            addFavorite(toolId, toolName, toolIcon, accentColor)
+            addFavorite(toolId, order)
         }
     }
 }
@@ -52,17 +50,14 @@ class RecentToolsRepository @Inject constructor(
     private val recentToolDao: RecentToolDao
 ) {
     
-    fun getRecentTools(limit: Int = 10): Flow<List<RecentToolEntity>> = 
-        recentToolDao.getRecentTools(limit)
+    fun getRecentTools(): Flow<List<RecentToolEntity>> = 
+        recentToolDao.getRecentTools()
     
-    suspend fun recordToolUsage(toolId: String, toolName: String, toolIcon: String, accentColor: String) {
+    suspend fun recordToolUsage(toolId: String) {
         val entity = RecentToolEntity(
             toolId = toolId,
-            toolName = toolName,
-            toolIcon = toolIcon,
-            accentColor = accentColor,
             lastUsedAt = System.currentTimeMillis(),
-            usageCount = 1 // Will be incremented by REPLACE strategy
+            useCount = 1
         )
         recentToolDao.insertOrUpdate(entity)
     }
