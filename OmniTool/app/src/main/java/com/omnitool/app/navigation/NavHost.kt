@@ -409,6 +409,33 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
+            
+            // New Tools
+            composable(Route.CountdownTimer.route) {
+                com.omnitool.features.utilities.countdown.CountdownTimerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.RandomPicker.route) {
+                com.omnitool.features.utilities.randompicker.RandomPickerScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.SpeedConverter.route) {
+                com.omnitool.features.converter.speed.SpeedConverterScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.FuelCalculator.route) {
+                com.omnitool.features.converter.fuel.FuelCalculatorScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
+            composable(Route.EncryptedNotes.route) {
+                com.omnitool.features.security.notes.EncryptedNotesScreen(
+                    onBack = { navController.popBackStack() }
+                )
+            }
         }
     }
 }
