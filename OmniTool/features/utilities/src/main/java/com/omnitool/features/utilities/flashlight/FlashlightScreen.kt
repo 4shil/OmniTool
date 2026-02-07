@@ -77,7 +77,7 @@ fun FlashlightScreen(
             ScreenLightButton(onClick = { viewModel.toggleScreenLight() })
         },
         primaryActionLabel = null,
-        onPrimaryAction = {}
+        onPrimaryAction = null
     )
 }
 

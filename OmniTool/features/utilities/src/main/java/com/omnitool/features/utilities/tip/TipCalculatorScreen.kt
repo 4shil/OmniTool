@@ -74,7 +74,7 @@ fun TipCalculatorScreen(
             )
         },
         primaryActionLabel = null,
-        onPrimaryAction = {},
+        onPrimaryAction = null,
         secondaryActionLabel = if (viewModel.billAmount.isNotEmpty()) "Clear" else null,
         onSecondaryAction = if (viewModel.billAmount.isNotEmpty()) {
             { viewModel.clear() }

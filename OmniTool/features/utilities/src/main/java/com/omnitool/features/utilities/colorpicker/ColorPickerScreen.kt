@@ -104,7 +104,7 @@ fun ColorPickerScreen(
                 }
             },
             primaryActionLabel = null,
-            onPrimaryAction = {}
+            onPrimaryAction = null
         )
         
         Box(

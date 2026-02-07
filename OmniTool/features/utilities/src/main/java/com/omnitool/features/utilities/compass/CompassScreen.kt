@@ -71,7 +71,7 @@ fun CompassScreen(
             }
         },
         primaryActionLabel = null,
-        onPrimaryAction = {}
+        onPrimaryAction = null
     )
 }
 

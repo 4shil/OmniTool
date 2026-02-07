@@ -62,7 +62,7 @@ fun WorldClockScreen(
             AddCityButton(onClick = { showAddDialog = true })
         },
         primaryActionLabel = null,
-        onPrimaryAction = {}
+        onPrimaryAction = null
     )
     
     // Add city dialog

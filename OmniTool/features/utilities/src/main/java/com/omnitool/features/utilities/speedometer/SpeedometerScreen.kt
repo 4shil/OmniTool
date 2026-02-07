@@ -84,7 +84,7 @@ fun SpeedometerScreen(
             }
         },
         primaryActionLabel = null,
-        onPrimaryAction = {}
+        onPrimaryAction = null
     )
 }
 

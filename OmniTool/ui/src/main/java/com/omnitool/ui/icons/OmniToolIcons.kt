@@ -118,6 +118,7 @@ object OmniToolIcons {
     val Shuffle: ImageVector = Icons.Outlined.Shuffle
     val FlashlightOn: ImageVector = Icons.Outlined.FlashlightOn
     val FlashlightOff: ImageVector = Icons.Outlined.FlashlightOff
+    val ScreenLight: ImageVector = Icons.Outlined.LightMode
     
     // Action Icons
     val Copy: ImageVector = Icons.Outlined.ContentCopy

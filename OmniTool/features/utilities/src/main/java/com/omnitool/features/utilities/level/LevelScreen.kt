@@ -63,7 +63,7 @@ fun LevelScreen(
             }
         },
         primaryActionLabel = null,
-        onPrimaryAction = {}
+        onPrimaryAction = null
     )
 }
 
