@@ -55,7 +55,6 @@ sealed class Route(val route: String) {
     data object BaseConverter : Route("tool/base_converter")
     data object StorageConverter : Route("tool/storage_converter")
     data object ColorConverter : Route("tool/color_converter")
-    data object TemperatureConverter : Route("tool/temperature_converter")
     data object SpeedConverter : Route("tool/speed_converter")
     data object FuelCalculator : Route("tool/fuel_calculator")
     data object Percentage : Route("tool/percentage_calculator")

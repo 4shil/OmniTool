@@ -236,11 +236,6 @@ fun OmniToolNavHost(
                     onBack = { navController.popBackStack() }
                 )
             }
-            composable(Route.TemperatureConverter.route) {
-                com.omnitool.features.converter.temperature.TemperatureConverterScreen(
-                    onBack = { navController.popBackStack() }
-                )
-            }
             
             // Security Tools
             composable(Route.PasswordGenerator.route) {
