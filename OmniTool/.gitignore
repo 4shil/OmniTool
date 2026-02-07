@@ -81,7 +81,7 @@ package-lock.json
 coverage/
 *.exec
 *.ec
-
+*.hprof
 # Signing configs (sensitive)
 signing.properties
 keystore.properties
