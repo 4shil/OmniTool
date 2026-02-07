@@ -48,5 +48,6 @@ dependencies {
     ksp(libs.hilt.android.compiler)
     implementation(libs.hilt.navigation.compose)
     
+    implementation(libs.zxing-core)
     testImplementation(libs.junit)
 }
