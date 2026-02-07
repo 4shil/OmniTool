@@ -43,8 +43,8 @@ fun ToolWorkspaceScreen(
     onBack: () -> Unit,
     inputContent: @Composable () -> Unit,
     outputContent: @Composable () -> Unit,
-    primaryActionLabel: String,
-    onPrimaryAction: () -> Unit,
+    primaryActionLabel: String? = null,
+    onPrimaryAction: (() -> Unit)? = null,
     modifier: Modifier = Modifier,
     secondaryActionLabel: String? = null,
     onSecondaryAction: (() -> Unit)? = null,
@@ -93,14 +93,15 @@ fun ToolWorkspaceScreen(
             Spacer(modifier = Modifier.height(OmniToolTheme.spacing.lg))
         }
         
-        // Primary Action Bar
-        ActionBar(
-            primaryActionLabel = primaryActionLabel,
-            onPrimaryAction = onPrimaryAction,
-            accentColor = accentColor,
-            secondaryActionLabel = secondaryActionLabel,
-            onSecondaryAction = onSecondaryAction
-        )
+        if (primaryActionLabel != null && onPrimaryAction != null) {
+            ActionBar(
+                primaryActionLabel = primaryActionLabel,
+                onPrimaryAction = onPrimaryAction,
+                accentColor = accentColor,
+                secondaryActionLabel = secondaryActionLabel,
+                onSecondaryAction = onSecondaryAction
+            )
+        }
     }
 }
 

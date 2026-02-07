@@ -57,7 +57,7 @@ fun CalculatorScreen(
             )
         },
         primaryActionLabel = null,
-        onPrimaryAction = {}
+        onPrimaryAction = null
     )
 }
 

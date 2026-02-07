@@ -24,6 +24,9 @@ object OmniToolIcons {
     val Settings: ImageVector = Icons.Outlined.Settings
     val Back: ImageVector = Icons.Outlined.ArrowBack
     val Search: ImageVector = Icons.Outlined.Search
+    val Camera: ImageVector = Icons.Outlined.CameraAlt
+    val Refresh: ImageVector = Icons.Outlined.Refresh
+    val Check: ImageVector = Icons.Outlined.CheckCircle
     
     // Text & Developer Tools
     val JsonFormatter: ImageVector = Icons.Outlined.DataObject
@@ -32,6 +35,7 @@ object OmniToolIcons {
     val Regex: ImageVector = Icons.Outlined.FindReplace
     val Base64: ImageVector = Icons.Outlined.Transform
     val UrlEncode: ImageVector = Icons.Outlined.Link
+    val UrlEncoder: ImageVector = Icons.Outlined.Link
     val Hash: ImageVector = Icons.Outlined.Tag
     val TextDiff: ImageVector = Icons.Outlined.Compare
     val CaseConverter: ImageVector = Icons.Outlined.TextFormat
@@ -44,6 +48,7 @@ object OmniToolIcons {
     val Scratchpad: ImageVector = Icons.Outlined.EditNote
     val HtmlPreview: ImageVector = Icons.Outlined.Language
     val CsvViewer: ImageVector = Icons.Outlined.TableChart
+    val Csv: ImageVector = Icons.Outlined.TableChart
     
     // File & Media Tools
     val ImageCompress: ImageVector = Icons.Outlined.Compress
@@ -55,11 +60,14 @@ object OmniToolIcons {
     val PdfExtract: ImageVector = Icons.Outlined.PhotoLibrary
     val PdfView: ImageVector = Icons.Outlined.PictureAsPdf
     val QrScan: ImageVector = Icons.Outlined.QrCodeScanner
+    val QrScanner: ImageVector = Icons.Outlined.QrCodeScanner
     val QrGenerate: ImageVector = Icons.Outlined.QrCode
     val AudioCut: ImageVector = Icons.Outlined.ContentCut
     val VideoToGif: ImageVector = Icons.Outlined.Gif
     val Exif: ImageVector = Icons.Outlined.Info
+    val ExifViewer: ImageVector = Icons.Outlined.Info
     val BatchRename: ImageVector = Icons.Outlined.DriveFileRenameOutline
+    val Rename: ImageVector = Icons.Outlined.DriveFileRenameOutline
     
     // Converter Tools
     val UnitConverter: ImageVector = Icons.Outlined.Straighten
@@ -72,6 +80,12 @@ object OmniToolIcons {
     val SpeedConverter: ImageVector = Icons.Outlined.Speed
     val FuelCalc: ImageVector = Icons.Outlined.LocalGasStation
     val PercentageCalc: ImageVector = Icons.Outlined.Percent
+    val Percentage: ImageVector = Icons.Outlined.Percent
+    val Temperature: ImageVector = Icons.Outlined.DeviceThermostat
+    val Bmi: ImageVector = Icons.Outlined.MonitorWeight
+    val BmiCalculator: ImageVector = Icons.Outlined.MonitorWeight
+    val LoanCalculator: ImageVector = Icons.Outlined.Calculate
+    val NumberBase: ImageVector = Icons.Outlined.ChangeCircle
     
     // Security Tools
     val PasswordGen: ImageVector = Icons.Outlined.Password
@@ -94,6 +108,16 @@ object OmniToolIcons {
     val Calculator: ImageVector = Icons.Outlined.Calculate
     val TipCalculator: ImageVector = Icons.Outlined.Receipt
     val QuickNotes: ImageVector = Icons.Outlined.StickyNote2
+    val Notes: ImageVector = Icons.Outlined.StickyNote2
+    val Compass: ImageVector = Icons.Outlined.Explore
+    val WorldClock: ImageVector = Icons.Outlined.Public
+    val Speed: ImageVector = Icons.Outlined.Speed
+    val Speedometer: ImageVector = Icons.Outlined.Speed
+    val Level: ImageVector = Icons.Outlined.Architecture
+    val Dice: ImageVector = Icons.Outlined.Casino
+    val Shuffle: ImageVector = Icons.Outlined.Shuffle
+    val FlashlightOn: ImageVector = Icons.Outlined.FlashlightOn
+    val FlashlightOff: ImageVector = Icons.Outlined.FlashlightOff
     
     // Action Icons
     val Copy: ImageVector = Icons.Outlined.ContentCopy
@@ -103,7 +127,6 @@ object OmniToolIcons {
     val Export: ImageVector = Icons.Outlined.FileDownload
     val Import: ImageVector = Icons.Outlined.FileUpload
     val Clear: ImageVector = Icons.Outlined.Clear
-    val Refresh: ImageVector = Icons.Outlined.Refresh
     val Undo: ImageVector = Icons.Outlined.Undo
     val Redo: ImageVector = Icons.Outlined.Redo
     val Check: ImageVector = Icons.Outlined.Check
@@ -118,7 +141,9 @@ object OmniToolIcons {
     val Pin: ImageVector = Icons.Outlined.PushPin
     val PinOutline: ImageVector = Icons.Outlined.PushPin
     val Delete: ImageVector = Icons.Outlined.Delete
+    val Swap: ImageVector = Icons.Outlined.SwapVert
     val Html: ImageVector = Icons.Outlined.Language
+    val Location: ImageVector = Icons.Outlined.LocationOn
     
     // Status Icons
     val Success: ImageVector = Icons.Outlined.CheckCircle
